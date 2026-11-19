@@ -34,7 +34,7 @@ if (!isset($_SESSION['logged_in']) || $_SESSION['logged_in'] !== true) {
         <input type="text" name="headerTxt" required><br><br>
 
         <label>Size of Images:</label><br>
-        <input type="number" name="imgSize" required><br><br>
+        <input type="number" name="imgSize" min = "0" required><br><br>
 
         <label>URL of the Base Image:</label><br>
         <input type="text" name="imgURL1" required><br><br>
