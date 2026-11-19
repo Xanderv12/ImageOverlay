@@ -57,8 +57,8 @@ def generatorFiles(title, header, imgSize, imgURL1, imgURL2): # This function wi
         with open(htmlPath, 'r', encoding='utf-8') as htmlFile:
             htmlContent = htmlFile.read()
             htmlContent = htmlContent.replace('{{header}}', header)
-            htmlContent = htmlContent.replace('{{imgURL1}}', imgURL1)
-            htmlContent = htmlContent.replace('{{imgURL2}}', imgURL2)
+            htmlContent = htmlContent.replace('{{img1}}', imgURL1)
+            htmlContent = htmlContent.replace('{{img2}}', imgURL2)
 
         # Write the modified HTML content to the destination file
         with open(htmlDest, 'w', encoding='utf-8') as destFile:

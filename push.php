@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Adjust python path and script path to match your server environment
     $pythonPath = ''; // Place location of python.exe or python3.exe here, e.g., C:\Python39\python.exe or /usr/bin/python3
-    $scriptPath = ''; // Place location of GUI_2.py here
+    $scriptPath = 'main.py'; // Place location of GUI_2.py here
 
     // Build the command line call
     $command = "$pythonPath $scriptPath $base_dir $head_Txt $imgSize $imgURL1 $imgURL2 2>&1";
